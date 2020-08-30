@@ -47,7 +47,9 @@ public class Library {
 
     public void showIssuedBooks() {
         for (String books : this.Book ){
-            System.out.println(books);
+            if (Book !=  null) {
+                System.out.println(books);
+            }
         }
     }
 
