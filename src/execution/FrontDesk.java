@@ -17,5 +17,11 @@ public class FrontDesk {
     public static final int Show_me_all_my_issued_book = 3;
     public static final int Exit = 4;
 
+    public static void main(String[] args) {
+        Student studentObject = new Student();
+        Library libraryObject = new Library();
+        Scanner scannerObject = new Scanner(System.in);
+        Student info = new Student();
+        info.studentInfo();
 
 }
