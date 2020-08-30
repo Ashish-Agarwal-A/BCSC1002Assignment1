@@ -18,5 +18,14 @@ public class Student {
     private String bookissuedbyStudents;
     private String[] book;
 
+    public Student() {
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.universityRollNumber = universityRollNumber;
+        this.bookissuedbyStudents = bookissuedbyStudents;
+        this.book = new String[5];
+    }
+
 
 }
