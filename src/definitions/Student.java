@@ -71,14 +71,17 @@ public class Student {
         return book;
     }
 
-
-
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "Student{" +
+                "firstName = '" +firstName + '\'' +
+                ", middleName = '" + middleName + '\'' +
+                ", lastName = '" + lastName + '\'' +
+                ", universityRollNumber = '" + universityRollNumber +
+                ", bookIssuedByStudent = " + bookIssuedByStudent +
+                ", book = " + Arrays.toString(book) +
+                '}' ;
+     }
 
 
 }
