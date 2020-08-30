@@ -31,6 +31,10 @@ public class Student {
         return firstName;
     }
 
+    public String setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
 
 
 
