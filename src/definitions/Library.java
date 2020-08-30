@@ -13,6 +13,13 @@ public class Library {
         this.Book = new String[5];
     }
 
+    public Library() {
+        this.Book = new String[5];
+        for (int i = 0; i < Book.length; i++) {
+            Book[i] = new String("Book " + ( i + 1));
+        }
+    }
+
 
 
 
