@@ -40,5 +40,12 @@ public class Library {
         return Arrays.equals(getBook() , library.getBook());
     }
 
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getBook());
+    }
+
+
+
 
 }
