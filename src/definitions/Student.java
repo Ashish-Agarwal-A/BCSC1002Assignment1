@@ -67,6 +67,10 @@ public class Student {
         this.bookIssuedByStudent = bookIssuedByStudent;
     }
 
+    public String[] getBook() {
+        return book;
+    }
+
 
 
 
