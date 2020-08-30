@@ -100,6 +100,15 @@ public class Student {
                 Arrays.equals(getBook(), student.getBook());
     }
 
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(getFirstName(), getMiddleName(), getLastName(), getUniversityRollNumber(), getBookIssuedByStudent());
+        result = 31 * result + Arrays.hashCode(getBook());
+        return result;
+    }
+
+
+
 
 
 }
