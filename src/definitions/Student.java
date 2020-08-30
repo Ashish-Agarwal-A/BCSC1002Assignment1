@@ -114,8 +114,12 @@ public class Student {
             }
     }
 
-
-
-
+    public void returnPreviouslyIssuedBook() {
+        for (String book : this.book){
+            if (book != null) {
+                System.out.println(book);
+            }
+        }
+    }
 
 }
