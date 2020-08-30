@@ -9,5 +9,11 @@ package definitions;
 public class Library {
     private String[] Book;
 
+    public Library(String[] Book) {
+        this.Book = new String[5];
+    }
+
+
+
 
 }
