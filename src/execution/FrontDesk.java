@@ -33,5 +33,25 @@ public class FrontDesk {
         Scanner scanner = new Scanner(System.in);
         int studentInput = scanner.nextInt();
         String bookName;
+        switch(studentInput) {
+            case Issue_a_new_book_for_me:
+                System.out.println("Enter the name of the book, you want to issued : ");
+                bookName = scannerObject.nextLine();
+                libraryObject.doCheckOut(bookName);
+                break;
+            case Return_a_previously_issued_book_for_me :
+                System.out.println("Enter the name of the book, you want to return :");
+                scannerObject.nextLine();
+                bookName = scannerObject.nextLine();
+                libraryObject.doReturn(bookName);
+                break;
+            case Show_me_all_my_issued_book :
+                studentObject.getBookIssuedByStudent();
+                break;
+            case Exit:
+                break;
+            default :
+                System.out.println("Please enter the valid option. ");
+        }
 
 }
