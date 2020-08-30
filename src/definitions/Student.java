@@ -27,5 +27,11 @@ public class Student {
         this.book = new String[5];
     }
 
+    public String getFirstName(){
+        return firstName;
+    }
+
+
+
 
 }
