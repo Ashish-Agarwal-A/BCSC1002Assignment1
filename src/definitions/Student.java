@@ -14,16 +14,16 @@ public class Student {
     private String firstName;
     private String middleName;
     private String lastName;
-    private String universityRollNumber;
-    private String bookissuedbyStudents;
+    private long universityRollNumber;
+    private int bookIssuedByStudent;
     private String[] book;
 
-    public Student() {
+    public Student(String firstName, String middleName, String lastName, long universityRollNUmber, int bookIssuedByStudent) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
         this.universityRollNumber = universityRollNumber;
-        this.bookissuedbyStudents = bookissuedbyStudents;
+        this.bookIssuedByStudent = bookIssuedByStudent;
         this.book = new String[5];
     }
 
@@ -49,6 +49,14 @@ public class Student {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
+    }
+
+    public void setUniversityRollNumber(long universityRollNumber) {
+        this.universityRollNumber = universityRollNumber;
     }
 
 
