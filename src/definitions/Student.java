@@ -107,6 +107,13 @@ public class Student {
         return result;
     }
 
+    public void bookIssuedByStudent() {
+        for(String book : this.book)
+            if(book != null){
+                System.out.println(book);
+            }
+    }
+
 
 
 
