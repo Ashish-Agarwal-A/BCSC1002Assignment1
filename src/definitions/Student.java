@@ -47,6 +47,13 @@ public class Student {
         return lastName;
     }
 
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+
+
+
 
 
 
