@@ -11,12 +11,22 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Student {
+    Scanner scanner = new Scanner(System.in);
     private String firstName;
     private String middleName;
     private String lastName;
     private long universityRollNumber;
     private int bookIssuedByStudent;
     private String[] book;
+
+    public Student() {
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.universityRollNumber = universityRollNumber;
+        this.bookIssuedByStudent = bookIssuedByStudent;
+        this.book = new String[5];
+    }
 
     public Student(String firstName, String middleName, String lastName, long universityRollNUmber, int bookIssuedByStudent) {
         this.firstName = firstName;
@@ -73,24 +83,18 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "firstName = '" +firstName + '\'' +
+        return "firstName = '" +firstName + '\'' +
                 ", middleName = '" + middleName + '\'' +
                 ", lastName = '" + lastName + '\'' +
                 ", universityRollNumber = '" + universityRollNumber +
                 ", bookIssuedByStudent = " + bookIssuedByStudent +
-                ", book = " + Arrays.toString(book) +
-                '}' ;
+                ", book = " + Arrays.toString(book) ;
      }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()){
-            return false;
-        }
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
         return getUniversityRollNumber() == student.getUniversityRollNumber() &&
                 getBookIssuedByStudent() == student.getBookIssuedByStudent() &&
@@ -107,19 +111,26 @@ public class Student {
         return result;
     }
 
-    public void bookIssuedByStudent() {
-        for(String book : this.book)
-            if(book != null){
-                System.out.println(book);
-            }
+    /**
+     * This method allows student to enter their details.
+     */
+    public void studentInfo() {
+        System.out.println("Enter your first name : ");
+        firstName = scanner.nextLine();
+        System.out.println("Enter your middle name : ");
+        middleName = scanner.nextLine();
+        System.out.println("Enter your last name : ");
+        lastName = scanner.nextLine();
+        System.out.println("Your full name is: " + firstName + "" + middleName + "" +lastName);
+
     }
 
-    public void returnPreviouslyIssuedBook() {
-        for (String book : this.book){
-            if (book != null) {
-                System.out.println(book);
-            }
-        }
+    /**
+     * This method is used to take university roll no as input from the student.
+     */
+    public void enterUniRollNo() {
+        System.out.println("Please enter your university roll no" + firstName + "" + middleName + "" +lastName);
+        universityRollNumber = scanner.nextLong();
     }
 
 }

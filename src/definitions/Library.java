@@ -20,11 +20,11 @@ public class Library {
     }
 
     public String[] getBook(){
-        return Book;
+        return Book.clone();
     }
 
     public void setBook(String[] Book ) {
-        this.Book = Book.clone();
+        this.Book = Book;
     }
 
     @Override
@@ -51,5 +51,31 @@ public class Library {
                 System.out.println(books);
             }
         }
+    }
+    /**
+     * This method allows us to add a new book in the library.
+     *
+     * @param bookName allow user to enter the book name.
+     */
+    public void addBooks(String bookName) {
+        System.out.println('\'' + bookName + '\'' + "book is added successfully.");
+    }
+
+    /**
+     * This method allows us to issued a book from library.
+     *
+     * @param bookName allow user to enter the book name that user want to issue.
+     */
+    public void doCheckOut(String bookName) {
+        System.out.println('\'' + bookName + '\'' + "book is issued to you successfully.");
+    }
+
+    /**
+     * This method is used to return books.
+     *
+     * @param bookName allows student o input the book name.
+     */
+    public void doReturn(String bookName) {
+        System.out.println('\'' + bookName + '\'' +"book returned successfully. " ) ;
     }
 }
