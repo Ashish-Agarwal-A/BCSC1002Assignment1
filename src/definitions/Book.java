@@ -12,5 +12,13 @@ public class Book {
     private String bookName;
     private String authorName;
     private String ISBNNumberOfBook;
+
+    public Book() {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.ISBNNumberOfBook = ISBNNumberOfBook;
+    }
 }
+
+
 
