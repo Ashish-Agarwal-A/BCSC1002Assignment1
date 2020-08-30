@@ -45,6 +45,12 @@ public class Library {
         return Arrays.hashCode(getBook());
     }
 
+    public void showIssuedBooks() {
+        for (String books : this.Book ){
+            System.out.println(books);
+        }
+    }
+
 
 
 
