@@ -40,6 +40,14 @@ public class Book {
     public void setAuthorName(String authorName) {
         this.authorName = authorName;
     }
+
+    public String getISBNNumberOfBook() {
+        return ISBNNumberOfBook;
+    }
+
+    public void setISBNNumberOfBook(String ISBNNumberOfBook) {
+        this.ISBNNumberOfBook = ISBNNumberOfBook;
+    }
 }
 
 
