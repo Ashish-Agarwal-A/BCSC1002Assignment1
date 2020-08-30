@@ -39,6 +39,10 @@ public class Student {
         return middleName;
     }
 
+    public void setMiddleName(String middleName ) {
+        this.middleName = middleName;
+    }
+
 
 
 
