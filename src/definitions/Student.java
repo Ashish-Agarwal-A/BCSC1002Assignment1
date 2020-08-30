@@ -43,6 +43,12 @@ public class Student {
         this.middleName = middleName;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
+
+
+
 
 
 
