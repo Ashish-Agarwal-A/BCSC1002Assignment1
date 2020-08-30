@@ -27,5 +27,10 @@ public class Library {
         this.Book = Book.clone();
     }
 
+    @Override
+    public String toString() {
+        return Arrays.toString(Book);
+    }
+
 
 }
