@@ -23,6 +23,9 @@ public class Library {
         return Book;
     }
 
+    public void setBook(String[] Book ) {
+        this.Book = Book.clone();
+    }
 
 
 }
